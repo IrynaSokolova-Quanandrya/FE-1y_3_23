@@ -1,0 +1,36 @@
+/* - Універсальний
+   - Теговый селектор (селектор элементу)
+   - Селектор класу
+   - Селектор ідентифікатора
+   - Селектор груп h1, p
+   - Селектор нащадку body a
+   - Дочірний селектор header > a
+
+   - Сусідній селектор header + main
+   - Споріднений селектор p~a
+   - Селектор атрибуту input[type=text] {...} */
+
+ *{
+    color: black;
+ }
+p,
+ul,
+h1,
+h2,
+h3{
+    background-color: yellow;
+}
+
+
+ ul{
+    list-style: none;
+ }
+
+ .section-title{
+    background-color: tomato;
+    width: 150px;
+ }
+
+ #title{
+    font-size: 48px;
+ }
