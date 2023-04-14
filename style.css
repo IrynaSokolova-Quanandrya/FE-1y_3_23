@@ -10,27 +10,14 @@
    - Споріднений селектор p~a
    - Селектор атрибуту input[type=text] {...} */
 
- *{
-    color: black;
- }
-p,
-ul,
-h1,
-h2,
-h3{
-    background-color: yellow;
-}
-
-
- ul{
-    list-style: none;
+ section > h2{
+   color: red;
  }
 
- .section-title{
-    background-color: tomato;
-    width: 150px;
+ section h2{
+  background-color: tomato;
  }
 
- #title{
-    font-size: 48px;
+ section + h2{
+  color: green;
  }
