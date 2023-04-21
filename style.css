@@ -4,9 +4,14 @@
     --logo-color: #000;
     --accent-color: #2196F3;
     --background-color: #fff;
+    --hero-background-color:#2F303A;
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+
     color: var(--primary-text-color);
     background-color: var(--background-color);
 }
@@ -19,12 +24,26 @@ ul{
     list-style: none;
 }
 
+/* header */
 .logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
     color: var(--accent-color);
 }
 
 .logo > span{
     color: var(--logo-color);
+}
+
+.nav-link,
+.contacts-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 
 .nav-link{
@@ -40,4 +59,31 @@ ul{
 .contacts-link:hover,
 .contacts-link:focus{
     color: var(--accent-color);
+}
+
+/* Герой */
+.hero{
+    background-color: var(--hero-background-color);
+}
+
+h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--background-color);
+}
+
+.hero-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;    
+
+    color: var(--background-color);
+    background-color: var(--accent-color);
 }
