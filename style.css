@@ -88,6 +88,40 @@ h1{
     background-color: var(--accent-color);
 }
 
+/* Переваги */
+.advantages .title,
+.advantages .text{
+    font-size: 14px;
+    line-height: 16px;
+}
+.advantages .title{
+    font-weight: 700;    
+    text-transform: uppercase;
+}
+
+.advantages .text{
+    font-weight: 400;
+
+    color: var(--secondary-text-color);
+}
+/* Наша команда */
+
+.name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.posision{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
 /* футер */
 .footer{
     background-color: var(--hero-background-color);
