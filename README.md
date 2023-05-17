@@ -13,7 +13,7 @@
 
 ТЕМА: Flex-box. Вирівнювання та розташування flex-елементів.
 
-1. Робимо div.container
+1. - Робимо div.container
 
 2. Flexible Box Layout (Flexbox)
 

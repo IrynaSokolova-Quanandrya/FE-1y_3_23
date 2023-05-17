@@ -52,7 +52,7 @@ li{
 }
 
 .container{
-    /* outline: solid 3px red; */
+    outline: solid 3px red;
 
     width: 1200px;
     padding-left: 15px;
@@ -62,6 +62,16 @@ li{
 }
 
 /* header */
+
+.container.header{
+    display: flex;
+}
+
+.header nav{
+    outline: solid 1px red;
+    display: flex;
+}
+
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -73,6 +83,20 @@ li{
 
 .logo > span{
     color: var(--logo-color);
+}
+
+.nav-list{
+    display: flex;
+
+    margin-left: 93px;
+}
+
+.contacts-list{
+    outline: solid 1px red;
+    display: flex; 
+    
+    margin-left: auto;
+
 }
 
 .nav-link,
@@ -140,6 +164,16 @@ h1{
     font-weight: 400;
 
     color: var(--secondary-text-color);
+}
+/* Чим ми займаємось */
+
+.what-we-do{
+    display: flex;
+    
+}
+
+.what-we-do img{
+    width: 270px;
 }
 /* Наша команда */
 
