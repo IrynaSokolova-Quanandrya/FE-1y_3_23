@@ -52,7 +52,7 @@ li{
 }
 
 .container{
-    outline: solid 3px red;
+    /* outline: solid 3px red; */
 
     width: 1200px;
     padding-left: 15px;
@@ -148,21 +148,38 @@ li{
 
 /* Герой */
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--hero-background-color);
 }
 
+.hero .container{
+    text-align: center;
+}
+
 h1{
+    width: 696px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
 
     color: var(--background-color);
 }
 
 .hero-button{
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    padding: 10px 32px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -174,6 +191,15 @@ h1{
 }
 
 /* Переваги */
+
+.advantages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages .item{
+    width: 270px;
+}
 .advantages .title,
 .advantages .text{
     font-size: 14px;
@@ -182,6 +208,8 @@ h1{
 .advantages .title{
     font-weight: 700;    
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
 .advantages .text{
@@ -193,11 +221,11 @@ h1{
 
 .what-we-do{
     display: flex;
-    
+    justify-content: space-between;    
 }
 
 .what-we-do img{
-    width: 270px;
+    width: 370px;
 }
 /* Наша команда */
 
