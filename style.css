@@ -61,6 +61,14 @@ li{
     margin-right: auto;
 }
 
+.section-title{   
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
 /* header */
 
 .container.header{
@@ -229,11 +237,31 @@ h1{
 }
 /* Наша команда */
 
+.section.our-team{
+    background: #F5F4FA;
+}
+
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list .img{
+    margin-bottom: 30px;
+}
+
+.team-list .item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .name{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+
+    margin-bottom: 10px;
 }
 
 .posision{
@@ -244,6 +272,8 @@ h1{
     letter-spacing: 0.03em;
 
     color: var(--secondary-text-color);
+
+    margin-bottom: 30px;
 }
 /* футер */
 .footer{
