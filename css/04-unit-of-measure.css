@@ -1,0 +1,73 @@
+.text{
+    width: 300px;
+}
+.text::selection{
+    background-color: teal;
+    color: brown;
+}
+
+.text::first-letter{
+    font-size: 48px;
+    color: yellowgreen;
+}
+
+/* .text::first-line{
+    background-color: aquamarine;
+} */
+
+html{
+    font-size: 48px;
+}
+
+body{
+    font-size: 2rem;
+}
+
+h1{
+    opacity: 0.5;
+    font-size: 2em;
+}
+h2{
+    font-size: 1em;
+}
+.text{
+    font-size: 0.8em;
+}
+
+
+
+
+
+/* em */
+    /* body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2em;        
+    }
+
+    h2 {
+        font-size: 1.5em;      
+    }
+
+    aside {
+        font-size: 0.75em;     
+    } */
+
+   /* rem  */
+    /* html {
+        font-size: 18px;
+    }
+
+    body {
+        font-size: 1rem;     
+    }
+
+    h1 {
+        font-size: 2rem;     
+    }
+
+    h2 {
+        font-size: 1.5rem;   
+    } */
