@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Векторна графіка</title>
+    <style>
+        a{
+                display: inline-block;
+                text-decoration: none;
+                margin-bottom: 50px;
+        }
+        .link{
+            background-color: blue;
+            border-radius: 5px;
+            width: 150px;
+            height: 100px;
+        }
+
+        .link:hover{
+            background-color: teal;
+            border-radius: 50px;
+        }
+
+        svg{
+            fill: wheat;
+        }
+    </style>
 </head>
 <body>
     <a href="./">На головну</a>
 
-    <!-- Векторна графіка має ряд переваг:
-        
-Масштабування — на відміну від растрової графіки, 
-        SVG не втрачає якість при масштабуванні.
-Розмір файлу — векторні зображення важать набагато 
-        менше растрових, якщо використовуються для іконок або 
-        іншої абстрактної графіки. Використання вектора для 
-        фотореалістичних зображень навпаки призводить до величезного 
-        розміру файлу.
-Динамічність — за допомогою CSS і JavaScript можна 
-        змінювати параметри векторного зображення, наприклад 
-        колір або рамки. 
--->
+<a href="" class="link">
+        <svg>
+            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+        </svg>
+</a>
 </body>
 </html>
