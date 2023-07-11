@@ -123,8 +123,12 @@ li{
 
 .contacts-list{
     display: flex; 
-    
+    align-items: center;    
     margin-left: auto;
+}
+
+.contacts-icon{
+    fill: rgba(117, 117, 117, 1);
 }
 
 
