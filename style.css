@@ -128,7 +128,7 @@ li{
 }
 
 .contacts-icon{
-    fill: rgba(117, 117, 117, 1);
+    fill: var(--secondary-text-color);
 }
 
 
@@ -255,6 +255,7 @@ h1{
 }
 
 .team-list .item{
+    padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -278,6 +279,37 @@ h1{
     color: var(--secondary-text-color);
 
     margin-bottom: 30px;
+}
+
+/* Список соц.мереж */
+.network-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.network-list a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    /* display: inline-block;
+    padding: 12px; */
+
+    width: 44px;
+    height: 44px;
+ 
+    color: rgba(175, 177, 184, 1);
+}
+.network-list a:hover,
+.network-list a:focus{
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--background-color);
+}
+.network-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 /* футер */
 .footer{
