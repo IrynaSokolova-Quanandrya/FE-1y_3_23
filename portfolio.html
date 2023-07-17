@@ -8,135 +8,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">    
     <!-- Зовнішній файл стилю -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
     <!-- Шапка -->
-    <header> 
-        <div class="container header">
-          <nav>
-            <!-- Логотип -->
-            <a class="logo" href="./">Web<span>Studio</span></a>
-            <!--Навігація -->
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link" href="./">Студія</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- Контакти -->
-          <ul class="contacts-list">
-           <li class="contacts-item">
-             <a class="contacts-link" href="">info@devstudio.com</a>
-           </li>
-           <li class="contacts-item">
-             <a class="contacts-link" href="">+38 096 111 11 11</a>
-           </li>
-          </ul>
-          
-        </div>
+    <header>
+    <div class="header-nav container">
+        <a class="logo" href="./"><span>Web</span>Studio</a>
+        <nav>             
+        <ul class="nav-list">               
+            <li class="list-item"><a class="link link-current" href="./">Студія</a></li>
+            <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
+            <li class="list-item"><a class="link" href="">Контакти</a></li>
+        </ul> 
+        </nav>
+        <ul class="contacts-nav">
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+    </div>
     </header>
     <!--Основна секція-->
 <main>
     <section class="section">
+
         <div class="container">
-    <ul class="btn-list">
-        <li class="btn-item">
-            <button type="button" href="">Усе</button>
-        </li>
-        <li class="btn-item">
-            <button type="button" href="">Веб-сайти</button>
-        </li>
-        <li class="btn-item">
-            <button type="button" href="">Застосунки</button>
-        </li>
-        <li class="btn-item">
-            <button type="button" href="">Дизайн</button>
-        </li>
-        <li class="btn-item">
-            <button type="button" href="">Маркетинг</button>
-        </li>
+            <h1 class="visually-hidden">Приклади робіт</h1>
+    <ul class="filter">
+        <li><a class="filter-link" href="">Усе</a></li>
+        <li><a class="filter-link" href="">Веб-сайти</a></li>
+        <li><a class="filter-link" href="">Застосунки</a></li>
+        <li><a class="filter-link" href="">Дизайн</a></li>
+        <li><a class="filter-link" href="">Маркетинг</a></li>
     </ul>
     <ul class="examples">
-        <li>
-            <a href=""> <img src="./images/portfolio/laptop.jpg" alt="Фотографии троих людей на экране ноутбука" width="370" height="294">
-            <h2 >Технокряк</h2>
-            <p >Веб-сайт</p>
+        <li  class="examples-link">
+            <a href=""> <img src="./img/portfolio/laptop.jpg" alt="Фотографии троих людей на экране ноутбука" width="370" height="294">
+            <h2  class="examples-titel">Технокряк</h2>
+            <p class="examples-type">Веб-сайт</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/players.jpg" alt="Два баскетболиста" width="370" height="294">
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p >Дизайн</p>
+        <li class="examples-link">
+            <a href=""><img src="./img/portfolio/players.jpg" alt="Два баскетболиста" width="370" height="294">
+            <h2 class="examples-titel">Постер New Orlean vs Golden Star</h2>
+            <p class="examples-type">Дизайн</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/seafood.jpg" alt="Рыба с надписью The seafood restaurant" width="370" height="294">
-            <h2>Ресторан Seafood</h2>
-            <p >Застосунки</p>
+        <li class="examples-link">
+            <a href=""><img src="./img/portfolio/seafood.jpg" alt="Рыба с надписью The seafood restaurant" width="370" height="294">
+            <h2 class="examples-titel">Ресторан Seafood</h2>
+            <p class="examples-type">Застосунки</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/headphone.jpg" alt="Наушники" width="370" height="294">
-            <h2>Проєкт Prime</h2>
-            <p >Маркетинг</p>
+        <li class="examples-link">
+            <a href=""><img src="./img/portfolio/headphone.jpg" alt="Наушники" width="370" height="294">
+            <h2 class="examples-titel">Проєкт Prime</h2>
+            <p class="examples-type">Маркетинг</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/boxes.jpg" alt="Две коробки" width="370" height="294">
-            <h2>Проєкт Boxes</h2>
-            <p >Застосунки</p>
+        <li class="examples-link">
+            <a href=""><img src="./img/portfolio/boxes.jpg" alt="Две коробки" width="370" height="294">
+            <h2 class="examples-titel">Проєкт Boxes</h2>
+            <p class="examples-type">Застосунки</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/monitor.jpg" alt="Черный монитор" width="370" height="294">
-            <h2>Inspiration has no Borders</h2>
-            <p >Веб-сайт</p>
+        <li class="examples-link">
+            <a href=""><img src="./img/portfolio/monitor.jpg" alt="Черный монитор" width="370" height="294">
+            <h2 class="examples-titel">Inspiration has no Borders</h2>
+            <p class="examples-type">Веб-сайт</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/magazine.jpg" alt="Книга в развороте" width="370" height="294">
-            <h2>Видавництво Limited Edition</h2>
-            <p >Дизайн</p>
+        <li class="examples-link">
+            <a href=""><img src="./img/portfolio/magazine.jpg" alt="Книга в развороте" width="370" height="294">
+            <h2 class="examples-titel">Видавництво Limited Edition</h2>
+            <p class="examples-type">Дизайн</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/labeltag.jpg" alt="Этикетка с надписью LA BEL TAG" width="370" height="294">
-            <h2>Проєкт LAB</h2>
-            <p >Маркетинг</p>
+        <li class="examples-link">
+            <a href=""><img src="./img/portfolio/labeltag.jpg" alt="Этикетка с надписью LA BEL TAG" width="370" height="294">
+            <h2 class="examples-titel">Проєкт LAB</h2>
+            <p class="examples-type">Маркетинг</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/desktop.jpg" alt="Ноутбук" width="370" height="294">
-            <h2>Growing Business</h2>
-            <p >Застосунки</p>
+        <li class="examples-link">
+            <a href=""><img src="./img/portfolio/desktop.jpg" alt="Ноутбук" width="370" height="294">
+            <h2 class="examples-titel">Growing Business</h2>
+            <p class="examples-type">Застосунки</p>
             </a>
         </li>
     </ul>
         </div>
+
 </section>
 </main>
     <!--Footer-->
-    <footer class="section footer">
+    <footer class="footer">
         <div class="container">
-          <a class="logo" href="./">Web<span>Studio</span></a>
-        <address>м. Київ, пр-т Лесі Українки, 26</address>
-        <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="contacts-link" href="">info@devstudio.com</a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="">+38 096 111 11 11</a>
-          </li>
-         </ul>
+            <a class="footer-logo" href=""><span>Web</span>Studio</a>
+        <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
+        <ul class="footer-contacts">
+            <li><a class="footer-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="footer-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
         </div>
-    </footer>
+</footer>
 </body>
 </html>
