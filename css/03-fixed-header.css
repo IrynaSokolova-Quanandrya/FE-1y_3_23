@@ -1,14 +1,18 @@
-body {
- /* padding-top: 80px; */
+:root{
+  --header-height: 70px;
 }
 
-.page-header {
+body{
+  padding-top: var(--header-height);
+}
+
+.page-header {  
   position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-  min-height: 10px;
-  background-color: rgb(21, 255, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: rgba(0, 255, 255, 0.5);
   outline: 1px solid black;
 }
 
