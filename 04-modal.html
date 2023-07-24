@@ -52,14 +52,12 @@
       dolorem eius repudiandae iusto temporibus totam omnis!
     </p>
 
-    <div class="backdrop" data-backdrop>
-      <div class="modal">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum veniam molestias sequi sapiente sunt soluta incidunt expedita? Nulla vitae architecto laboriosam, sunt praesentium quas blanditiis fuga dignissimos accusamus? At?</p>
-        <button data-close-modal>Закрити</button>
-      </div>
-
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus error voluptatem omnis, velit deserunt repudiandae blanditiis ex, iusto qui soluta odit ipsum at molestias exercitationem eum aliquid laborum ut modi perferendis debitis fuga cumque impedit. Explicabo sapiente ipsum nostrum nisi culpa reprehenderit nulla? Accusantium doloremque nesciunt repellendus voluptatum illum.</p>
+          <button type="button" data-close-modal>Закрити модалку</button>
+        </div>
     </div>
-
     
     <script>
       const refs = {
@@ -68,6 +66,7 @@
         backdrop: document.querySelector("[data-backdrop]"),
       };
 
+      
       refs.openModalBtn.addEventListener("click", toggleModal);
       refs.closeModalBtn.addEventListener("click", toggleModal);
 
