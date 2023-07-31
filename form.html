@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форми</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <form>
+        <label for="name">Введіть ім'я</label>
+        <input type="text" value="name" name="name" id="name">
+<br>
+        <label for="tel">Введіть номер телефону</label>
+        <input type="tel" name="tel" id="tel" placeholder="+380">
+<br>
+        <label for="mail">Введіть електрону адресу</label>
+        <input type="email" name="mail" id="mail" autofocus>
+<br>
+        <input type="checkbox" name="topic" id="HTML" >
+        <label for="HTML">HTML</label>
+
+        <input type="checkbox" name="topic" id="JS" checked>
+        <label for="JS">JS</label>
+
+        <input type="checkbox" name="topic" id="CSS" >
+        <label for="CSS">CSS</label>
+<br>
+        <input type="radio" name="level" id="Junior">
+        <label for="Junior">Junior</label>
+
+        <input type="radio" name="level" id="Middle">
+        <label for="Middle">Middle</label>
+
+        <input type="radio" name="level" id="Senior">
+        <label for="Senior">Senior</label>
+<br>
+        <button type="submit">Відправити</button>
+    </form>
+
+    <div role="form">
+        <input type="date">
+        <br>
+        <input type="datetime-local" name="" id="">
+        <br>
+        <input type="file" name="" id=""
+        accept=".doc,.docx,.png, .jpg"
+        >
+        <br>
+        <input type="range" name="" id="">
+    </div>
+
+        <textarea placeholder="введіть ваш коментарій" type="text" rows="5" cols="30"></textarea>
+  
 </body>
 </html>
