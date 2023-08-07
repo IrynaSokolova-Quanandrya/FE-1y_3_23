@@ -5,13 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форми</title>
     <style>
-        textarea{
+        /* textarea{
             resize: none;
+        } */
+
+        ul{
+            list-style: none;
         }
+
+        .field{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .form .icon{
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: teal;
+        }
+
+        .field input{   
+            outline: none;        
+            width: 150px;
+            height: 30px;
+            padding-left: 25px;
+        }
+
+        .field:focus-within .icon{
+            background-color: blue;
+        }
+
+        .field:focus-within input{
+            border-color: blue;
+        }
+
+        textarea{
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+        /* .field input:focus + .icon,
+        .field input:hover + .icon{
+            background-color: blue;
+        }
+        
+
+        .field input:focus,
+        .field input:hover{
+            border-color: blue;
+        } */
+
     </style>
 </head>
 <body>
-    <form>
+    <form class="form">
+        <h2>Зареєструйтесь!</h2>
+        <ul class="form-fields">
+            <li class="field">
+                <label>Ім'я
+                </label> 
+                <input type="text">
+                
+                <span class="icon"></span>                  
+            </li>
+            <li class="field">
+                <label>Ел. пошта</label>
+                <input type="email">  
+                <span class="icon"></span>                  
+            </li>
+           <textarea name="" id="" cols="30" rows="10" placeholder="enter comments"></textarea>
+        </ul>
+    </form>
+
+
+
+
+    <!-- <form>
         <label for="name">Введіть ім'я</label>
         <input type="text" value="name" name="name" id="name">
 <br>
@@ -52,9 +126,9 @@
         >
         <br>
         <input type="range" name="" id="">
-    </div>
+    </div> -->
 
-        <textarea placeholder="введіть ваш коментарій" type="text" rows="5" cols="30"></textarea>
+        <!-- <textarea placeholder="введіть ваш коментарій" type="text" rows="5" cols="30"></textarea> -->
   
 </body>
 </html>
