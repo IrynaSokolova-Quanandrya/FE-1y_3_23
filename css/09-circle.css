@@ -1,0 +1,57 @@
+      
+
+@keyframes white-circle{
+    0%{
+        left: 0;
+        background-color: white;
+    }
+    50%{
+        bottom: 0;
+        border-radius: 0;
+        background-color: brown;
+    }
+    100%{
+        left: 100%;
+        background-color: chartreuse;
+    }
+}
+
+
+
+.content{
+    width: 800px;
+    height: 500px;
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.content-circle{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    /* анімація */
+
+    /* animation-name: white-circle;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    /* animation-delay: 2s; */
+    animation: white-circle 1500ms linear infinite alternate;
+}
+
+.content:hover .content-circle{
+    animation-play-state: paused;
+}
+/* animation-name: ;
+      animation-duration: ;
+      animation-timing-function: ;
+      animation-iteration-count: ;
+      animation-direction: ;
+      animation-delay: ;
+      animation-fill-mode: ; */
