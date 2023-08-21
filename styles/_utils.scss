@@ -1,0 +1,36 @@
+html{
+    box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
