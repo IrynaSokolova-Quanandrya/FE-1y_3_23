@@ -1,0 +1,43 @@
+.hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--hero-background-color);
+
+    & .container{
+    text-align: center;
+}
+
+&-button{
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    padding: 10px 32px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;    
+
+    color: var(--background-color);
+    background-color: var(--accent-color);
+}
+}
+
+h1{
+    width: 696px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--background-color);
+}
+
