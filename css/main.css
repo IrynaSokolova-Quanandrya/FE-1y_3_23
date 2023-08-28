@@ -43,7 +43,7 @@ li {
   margin: 0;
 }
 
-.section {
+.section, .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -288,7 +288,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.section.our-team {
+.our-team {
   background: #F5F4FA;
 }
 

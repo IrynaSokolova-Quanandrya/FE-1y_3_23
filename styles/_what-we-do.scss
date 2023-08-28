@@ -1,6 +1,5 @@
 .what-we-do{
-    display: flex;
-    justify-content: space-between;    
+    @include flexContainer(space-between);
 }
 
 .what-we-do img{

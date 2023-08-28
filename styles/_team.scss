@@ -1,10 +1,10 @@
-.section.our-team{
+.our-team{
+    @extend .section;
     background: #F5F4FA;
 }
 
 .team-list{
-    display: flex;
-    justify-content: space-between;
+    @include flexContainer(space-between);
 }
 
 .team-list .img{

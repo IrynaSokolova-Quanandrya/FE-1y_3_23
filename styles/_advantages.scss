@@ -25,8 +25,7 @@
 }
 
 .feture-icon {
-    display: flex;
-    justify-content: center;
+    @include flexContainer(center);
     margin-bottom: 30px;
   }
   .icon {
