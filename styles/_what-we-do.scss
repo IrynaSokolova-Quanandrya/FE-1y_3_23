@@ -6,3 +6,29 @@
 .what-we-do img{
     width: 370px;
 }
+
+.thumb {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .thumb-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--background-color);
+  }
+  .thumb-text > p {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
