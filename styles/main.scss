@@ -13,6 +13,25 @@
 
 /* ПОРТФОЛІО */
 
+// @each $animal in dog, cat, bird, turtle {
+//   .#{$animal}-icon {
+//     background-image: url('../images/#{$animal}.png');
+//   }
+// }
+
+// .dog-icon{
+//   background-image: url('../images/dog.png');
+// }
+// .cat-icon{
+//   background-image: url('../images/cat.png');
+// }
+
+// .bird-icon{
+//   background-image: url('../images/bird.png');
+// }
+
+
+
 // Модалка
 /*модальное окно*/
 
