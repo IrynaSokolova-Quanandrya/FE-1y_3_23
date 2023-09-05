@@ -47,6 +47,16 @@ li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 480px) {
+  .section, .our-team {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .section, .our-team {
+    background-color: green;
+  }
+}
 
 .container {
   width: 1200px;
@@ -184,7 +194,7 @@ li {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--background-color);
-  background-color: var(--accent-color);
+  background-color: var(--background-color);
 }
 
 h1 {

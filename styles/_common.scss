@@ -1,7 +1,17 @@
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
+    
+    @media screen and (max-width: 480px) {        
+            background-color: red;
+    }
+
+    @media screen and (min-width: 1140px) {
+            background-color: green;
+    }
 }
+
+
 
 .container{
     width: 1200px;
