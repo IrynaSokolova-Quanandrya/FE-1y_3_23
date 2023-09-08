@@ -47,23 +47,28 @@ li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 480px) {
-  .section, .our-team {
-    background-color: red;
-  }
-}
-@media screen and (min-width: 1140px) {
-  .section, .our-team {
-    background-color: green;
-  }
-}
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section-title {
@@ -210,16 +215,44 @@ h1 {
   color: var(--background-color);
 }
 
-.advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .advantages .item {
-  width: 270px;
+  outline: 1px solid black;
+}
+@media screen and (min-width: 480px) {
+  .advantages .item {
+    width: 450px;
+  }
+  .advantages .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages .item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages .item {
+    width: 270px;
+  }
 }
 .advantages .title,
 .advantages .text {

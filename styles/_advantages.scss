@@ -1,9 +1,32 @@
 .advantages{
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    @media screen and (min-width: $desktop){
+        justify-content: space-between;
+    }
 
     .item{
-        width: 270px;
+        outline: 1px solid black;
+        @media screen and (min-width: $mobile) {
+            width: 450px;
+
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+       }
+       @media screen and (min-width: $tablet) {
+            margin: 15px;
+            width: calc((100% - 30px * 2) / 2);
+       }
+       @media screen and (min-width: $desktop) {
+            width: 270px;
+       }
+
+       
     }
     .title,
     .text{
@@ -18,8 +41,7 @@
     }
     
     .text{
-        font-weight: 400;
-    
+        font-weight: 400;    
         color: var(--secondary-text-color);
     }
 }
