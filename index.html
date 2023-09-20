@@ -16,13 +16,20 @@
 </head>
 <body class="body">
   <!-- Шапка сторінки -->
-    <!-- <header> 
+    <header> 
         <div class="container header">
-          <nav> -->
-            <!-- Логотип -->
-            <!-- <a class="logo" href="./">Web<span>Studio</span></a> -->
+           <!-- Логотип -->
+           <a class="logo" href="./">Web<span>Studio</span></a>
+          <button type="button" class="menu-btn is-open" data-menu-button >
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-smartphone" class="icon-open"></use>
+              <use href="./images/symbol-defs.svg/icon-envelope" class="icon-close"></use>
+            </svg>
+          </button> 
+          <div class="mobile-menu">
             <!--Навігація -->
-            <!-- <ul class="nav-list">
+          <nav> 
+            <ul class="nav-list">
               <li class="nav-item">
                 <a class="nav-link current" href="">Студія</a>
               </li>
@@ -33,9 +40,9 @@
                 <a class="nav-link" href="">Контакти</a>
               </li>
             </ul>
-          </nav> -->
+          </nav>
           <!-- Контакти -->
-          <!-- <ul class="contacts-list">
+          <ul class="contacts-list">
            <li class="contacts-item">
              <a class="contacts-link" href="">
               <svg class="contacts-icon" width="16" height="12">
@@ -53,28 +60,29 @@
             </a>
            </li>
           </ul>
+          </div>
           
         </div>
-    </header> -->
+    </header>
 
 <!-- Головний контент -->
       <main>
         <!-- Секція герой -->
-        <!-- <section class="section hero">
+        <section class="section hero">
             <div class="container">
               <h1>Ефективні рішення для вашого бізнесу</h1>
-              <button class="hero-button" type="button" >Замовити послугу</button> -->
+              <button class="hero-button" type="button" >Замовити послугу</button>
               <!--Модальне вікно-->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
       <button class="modal-button" type="button" data-modal-close>
       <svg class="icon">
           <use href="./images/symbol-defs.svg#icon-close"/>
       </svg>
-      </button> -->
+      </button>
 <!--Форма модального вікна-->
 
-<!-- <form class="form">
+<form class="form">
   <b class="title">Залишье свої дані, ми вам зателефонуємо</b>
   <ul class="fields">
       <li class="field">
@@ -118,14 +126,16 @@
           </label>    
    </div>   
           <button class="button" type="submit">Відправити</button>
-</form> -->
-            <!-- </div> -->
+</form>
+            </div>
 
         </section>
         <!-- Переваги -->        
-        <section class="section">
+        <!-- <section class="section">
           <div class="container">
-            <!-- <h2 class="section-title">Переваги</h2> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path d="M25.6055 0H4.39453C1.97159 0 0 1.97159 0 4.39453V25.6055C0 28.0284 1.97159 30 4.39453 30H13.2422V19.3945H9.72656V14.1211H13.2422V10.5469C13.2422 7.63893 15.6077 5.27344 18.5156 5.27344H23.8477V10.5469H18.5156V14.1211H23.8477L22.9688 19.3945H18.5156V30H25.6055C28.0284 30 30 28.0284 30 25.6055V4.39453C30 1.97159 28.0284 0 25.6055 0Z" fill="#21243D"/>
+            </svg>
           <ul class="list advantages">
             <li class="item">
               <div class="feture-icon">
@@ -165,9 +175,9 @@
             </li>            
           </ul>
           </div>
-        </section>
+        </section> -->
         <!-- Чим ми займаємося -->
-        <section class="section">
+        <!-- <section class="section">
           <div class="container">
             <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="what-we-do">
@@ -197,9 +207,9 @@
               </li>
           </ul>
           </div>
-      </section>
+      </section> -->
       <!-- Наша команда -->
-      <section class="our-team">
+      <!-- <section class="our-team">
           <div class="container">
             <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
@@ -345,10 +355,10 @@
               </li>
           </ul>
           </div>
-      </section>
+      </section> -->
   </main>
   <!-- Футер -->
-  <footer class="section footer">
+  <!-- <footer class="section footer">
       <div class="container">
         <a class="logo" href="./">Web<span>Studio</span></a>
       <address>м. Київ, пр-т Лесі Українки, 26</address>
@@ -361,24 +371,10 @@
         </li>
        </ul>
       </div>
-  </footer>
+  </footer> -->
+  <script src="./js/modal.js" type="module"/>
+  <script src="./js/mobile-menu.js" type="module"/>
 </body>
-<script>
-  (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-</script>
 </html>
 
 
