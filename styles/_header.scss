@@ -1,16 +1,12 @@
 .container.header{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 
     padding-top: 24px;
     padding-bottom: 25px;
-
-    nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }    
+   
 
     @media screen and (max-width: 767px) {
         justify-content: space-between;
@@ -31,13 +27,22 @@
 }
 
 .nav-list{
+   @media screen and (min-width: $desktop) {
     display: flex;
     margin-left: 93px;
+   }
 }
 
 .nav-item:not(:first-child),
 .contacts-item:not(:first-child){
-    margin-left: 50px;
+   @media screen and (max-width: 767px) {
+    margin-top: 32px;
+   }
+    
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 50px;
+    }
 }
 
 
@@ -55,10 +60,18 @@
 
 .nav-link,
 .contacts-link{
+    font-size: 40px;
     font-weight: 500;
-    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.8px;
+
+
+   @media screen and (min-width: $desktop) {
+     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+   }
+   
 }
 
 .nav-link{
@@ -72,16 +85,18 @@
     color: var(--accent-color);
   }  
 
-  &.current::after{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-}
+ @media screen and (min-width: $desktop) {
+    &.current::after{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+    }
+ }
 }
 
 .contacts-link{
@@ -94,11 +109,16 @@
 }
 
 .menu-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
     display: inline-block;
     width: 40px;
     height: 40px;
     border: none;
     background-color: transparent;
+
+    z-index: 5;
 
     @media screen and (min-width: $tablet) {
         display: none;
@@ -117,11 +137,21 @@
     display: none;
 }
 
-// .mobile-menu{
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 480px;
-//     height: 796px;
-//     background-color: var(--background-color);
-// }
+.mobile-menu{
+   @media screen and (max-width: 767px) {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 40px 48px;
+
+    width: 480px;
+    height: 796px;
+    background-color: var(--background-color);
+   }
+
+    &.is-open{
+        display: block;
+    }
+}
