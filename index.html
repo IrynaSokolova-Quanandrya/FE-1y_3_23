@@ -214,7 +214,17 @@
             <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
               <li class="item">
-                  <img class="img" src="./images/our-team/demianenko.jpg" alt="Ігор Дем’яненко" width="270" height="260">
+                  <img 
+                      class="img" 
+                      srcset="
+                          ./images/our-team/demianenko@1x.jpg 1x,
+                          ./images/our-team/demianenko@2x.jpg 2x,
+                          ./images/our-team/demianenko@3x.jpg 3x
+                      "
+                      src="./images/our-team/demianenko@1x.jpg" 
+                      alt="Ігор Дем’яненко"               
+                      sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                      >
                   <p class="name">Ігор Дем’яненко</p>
                   <p class="posision">Product Designer</p>
                   <ul class="network-list">
