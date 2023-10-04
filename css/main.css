@@ -560,6 +560,53 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.box-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+}
+@media screen and (max-width: 1114px) {
+  .box-container {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 1115px) {
+  .box-container {
+    width: 1115px;
+  }
+}
+
+.list {
+  text-align: center;
+}
+@media screen and (min-width: 1115px) {
+  .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.item {
+  outline: 1px solid red;
+}
+@media screen and (min-width: 1115px) {
+  .item {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1114px) {
+  .item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
 /* ПОРТФОЛІО */
 /*модальное окно*/
 .backdrop {
